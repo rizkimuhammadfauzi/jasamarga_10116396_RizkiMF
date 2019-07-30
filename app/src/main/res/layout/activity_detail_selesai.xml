@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="85dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Jenis"
+        android:textSize="14dp" />
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/txtJenis"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvJenis"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editeks"
+        android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Meter"
+            android:layout_below="@+id/txtJenis"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:editable="false"
+            android:id="@+id/txtMeter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvMeter"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editeks"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvMeterDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Meter Detail"
+            android:layout_below="@+id/txtMeter"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:editable="false"
+            android:id="@+id/txtMeterDetail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvMeterDetail"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editeks"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Deskripsi"
+            android:layout_below="@+id/txtMeterDetail"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:editable="false"
+            android:id="@+id/txtDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/tvDeskripsi"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editeks"
+            android:paddingLeft="11dp"
+            android:paddingBottom="30dp" />
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/txtDeskripsi"
+            android:layout_toRightOf="@+id/photo"
+            android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

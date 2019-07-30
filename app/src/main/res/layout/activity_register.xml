@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="85dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="200dp">
+
+                <EditText
+                    android:id="@+id/txtNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nama Lengkap"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tiEmail">
+
+                <EditText
+                    android:id="@+id/txtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Username"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/tiUsername"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:textSize="12sp"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiRepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/tiPassword"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/txtRepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Re-Password"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:textSize="12sp"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegis"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:elevation="4dp"
+                android:background="@color/colorBlue"
+                android:layout_below="@+id/tiRepassword"
+                android:layout_marginTop="25dp"
+                android:text="register"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah mempunyai akun? Login"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Jasamarga Maintenance</string>
+    <string name="jalan">Laporan Inspeksi \n<b>jalan</b></string>
+    <string name="sepanjangJalan">Laporan Inspeksi \n<b>Sepanjang jalan</b></string>
+
+    <string name="selesai">Selesai</string>
+    <string name="belum_selesai">Belum Selesai</string>
+
+    <string name="success_popup">yeaaay... Data Berhasil Di Input</string>
+    <string name="gagal_popup">uuuppss... Data gagal di Input :(</string>
+
+    <string-array name="jalan">
+        <item>Lubang</item>
+        <item>Marka</item>
+        <item>Kebersihan Jalur</item>
+        <item>Jembatan</item>
+        <item>JPO</item>
+    </string-array>
+
+    <string-array name="sepanjangJalan">
+        <item>Rambu</item>
+        <item>Pagar</item>
+        <item>Rumput</item>
+        <item>Drainase</item>
+
+    </string-array>
+
+    <string-array name="meter">
+        <item>Pilih Meter</item>
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+    </string-array>
+
+    <string-array name="meterDetail">
+        <item>Pilih Meter Detal</item>
+        <item>0</item>
+        <item>010</item>
+        <item>020</item>
+        <item>030</item>
+        <item>040</item>
+        <item>050</item>
+        <item>060</item>
+        <item>070</item>
+        <item>080</item>
+        <item>090</item>
+    </string-array>
+
+</resources>
